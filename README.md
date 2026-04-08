@@ -1,5 +1,7 @@
 # Narrative Pipeline
 
+[繁體中文說明](README.zh-TW.md)
+
 Narrative Pipeline is a lightweight repo for human-AI collaborative writing. It keeps the workflow simple: prepare story inputs, draft a `Narrative Spec`, write one scene at a time, then run critique and revision loops.
 
 This is not a one-click writing toy. It is a controlled long-form workflow with clear files, prompts, and human decision points.
@@ -11,11 +13,38 @@ This is not a one-click writing toy. It is a controlled long-form workflow with 
 4. Human Decision Layer: accept, reject, rewrite, and curate.
 
 ## Quick Start
-Clone the repo, create a virtual environment, and install the CLI:
+### Fastest on Windows
+Run the one-click setup script from the repo root:
+
+```bat
+start.bat
+```
+
+It creates `.venv`, installs the local package, and prints the next commands to run.
+
+Create your first project with the same script:
+
+```bat
+start.bat init my_story
+start.bat status projects\my_story
+```
+
+### Manual Setup
+Clone the repo, create a virtual environment, and install the CLI.
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -e .
+```
+
+macOS / Linux:
 
 ```bash
-python -m venv .venv
-.venv\Scripts\activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -e .
 ```
 

@@ -1,0 +1,49 @@
+name: readme-smoke-test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  docs-and-cli:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Smoke test documented commands
+        run: python scripts/check_readme_examples.py
+
+  windows-start-bat:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run start.bat setup
+        shell: cmd
+        run: start.bat
+
+      - name: Run init through start.bat
+        shell: cmd
+        run: start.bat init my_story --projects-dir "%RUNNER_TEMP%\np-projects"
+
+      - name: Run status through start.bat
+        shell: cmd
+        run: start.bat status "%RUNNER_TEMP%\np-projects\my_story"
