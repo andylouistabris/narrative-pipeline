@@ -1,0 +1,7 @@
+- name: Protagonist
+  role: writer
+  core_trait:
+    - exhausted
+    - perceptive
+  want: finish a long-form project
+  need: redesign the workflow rather than brute-force every page

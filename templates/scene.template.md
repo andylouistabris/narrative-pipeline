@@ -1,0 +1,6 @@
+INT./EXT. LOCATION - TIME
+
+Action.
+
+CHARACTER
+Dialogue.
