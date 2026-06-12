@@ -6,3 +6,12 @@ venv/
 build/
 dist/
 *.egg-info/
+
+# Local creative archives and personal writing data
+backups/conversations/
+examples/novel/
+examples/screenplay/
+examples/teleplay/
+examples/translation/
+examples/我的萬行詩/
+my-personal-writing-skill/
