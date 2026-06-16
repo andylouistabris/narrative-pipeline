@@ -93,6 +93,7 @@ Create or update a Canon document containing:
 - Timeline
 - World logic
 - Scene format rules
+- File output rules
 - Forbidden deviations
 - Continuity checkpoints
 - Output requirements
@@ -106,6 +107,7 @@ When preparing a Codex task, include:
 - Task objective
 - Input files to read first
 - Output file path
+- Date folder for generated outputs, using the current local date in `YYYY-MM-DD` format
 - Scene/chapter scope
 - Required format
 - Character constraints
@@ -114,6 +116,8 @@ When preparing a Codex task, include:
 - Word count or page count target
 - Acceptance criteria
 - Explicit instruction not to modify unrelated files
+
+When a task generates Markdown, Word, and PDF versions of the same deliverable, place the `.md`, `.docx`, and `.pdf` files together in the same date folder unless the user explicitly instructs otherwise.
 
 Codex should generate controlled drafts, not uncontrolled expansions.
 

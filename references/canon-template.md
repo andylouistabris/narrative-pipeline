@@ -76,6 +76,12 @@ Write the premise in 1–3 concise paragraphs.
 - Pacing:
 - Forbidden stylistic habits:
 
+## File Output Rules
+
+- Use a date folder named with the current local date in `YYYY-MM-DD` format.
+- Put all generated `.md`, Word `.docx`, and PDF `.pdf` versions of the same output in that same date folder.
+- Do not scatter different formats of the same deliverable across separate folders unless the user explicitly instructs otherwise.
+
 ## Forbidden Deviations
 
 - Do not add new major characters unless instructed.
@@ -89,6 +95,7 @@ Write the premise in 1–3 concise paragraphs.
 - Read this Canon before writing.
 - Preserve continuity.
 - Write only within the assigned scope.
+- Follow the File Output Rules when creating or exporting Markdown, Word, or PDF files.
 - Do not modify unrelated files.
 - If a requirement is unclear, make the smallest reasonable assumption and mark it.
 
@@ -100,3 +107,4 @@ Write the premise in 1–3 concise paragraphs.
 - Is the conflict active rather than explanatory?
 - Is the dialogue consistent with the characters?
 - Are there any hallucinated additions?
+- Are all generated `.md`, `.docx`, and `.pdf` versions placed in the correct date folder?
