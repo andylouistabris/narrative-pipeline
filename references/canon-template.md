@@ -78,7 +78,7 @@ Write the premise in 1–3 concise paragraphs.
 
 ## File Output Rules
 
-- Use a date folder named with the current local date in `YYYY-MM-DD` format.
+- Use a date folder named with the current local date in `YYYYMMDD` format.
 - Put all generated `.md`, Word `.docx`, and PDF `.pdf` versions of the same output in that same date folder.
 - Do not scatter different formats of the same deliverable across separate folders unless the user explicitly instructs otherwise.
 

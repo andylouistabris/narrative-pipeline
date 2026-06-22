@@ -107,7 +107,7 @@ When preparing a Codex task, include:
 - Task objective
 - Input files to read first
 - Output file path
-- Date folder for generated outputs, using the current local date in `YYYY-MM-DD` format
+- Date folder for generated outputs, using the current local date in `YYYYMMDD` format
 - Scene/chapter scope
 - Required format
 - Character constraints
